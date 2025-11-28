@@ -1,0 +1,14 @@
+{
+  "name": "greenthumb-site",
+  "version": "1.0.0",
+  "description": "A website for GreenThumb Landscape Management",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemailer": "^7.0.10"
+  }
+}

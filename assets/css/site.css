@@ -1,0 +1,8 @@
+/* --- Sticky header offset (mobile + anchors) --- */
+:root { --gt-header-h: 64px; }                  /* default mobile header height */
+@media (min-width:640px){ :root { --gt-header-h: 72px; } }   /* sm */
+@media (min-width:1024px){ :root { --gt-header-h: 80px; } }  /* lg */
+
+html { scroll-padding-top: calc(var(--gt-header-h) + 8px); }  /* offsets #anchor jumps */
+main.has-sticky-offset { padding-top: var(--gt-header-h); }   /* pushes content below header */
+@media (max-width:767px){main{padding-bottom:5.5rem}}
